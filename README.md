@@ -1,4 +1,4 @@
-# 🏫 Sistema de Registro Estudiantil - ITA
+# Sistema de Registro Estudiantil - ITA
 
 Proyecto de gestión académica desarrollado para el **Instituto Tecnológico de Aguascalientes**. Esta aplicación permite 
 administrar de manera eficiente el registro de estudiantes y las carreras de la institución. Primeramente se presenta con
@@ -15,7 +15,7 @@ donde se podra agregar, editar, eliminar, o bien, regresar al menú y/o cambiar 
 * **Docente:** Yomira del Carmen Rosales Martinez
 * **Institución:** Instituto Tecnológico de Aguascalientes 
 
-## 🚀 Tecnologías Utilizadas
+## Tecnologías Utilizadas
 * **Backend:** PHP 8.x + Laravel 12
 * **Frontend:** Tailwind CSS v4 
 * **Base de Datos:** MySQL
