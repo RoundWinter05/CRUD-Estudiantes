@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="max-w-2xl mx-auto">
-    <h1 class="text-3xl font-bold text-gray-800 mb-6">Modificar Datos de {{$student->name}}, {{$student->last_name}}</h1>
+    <h1 class="text-3xl font-bold text-gray-800 mb-6">Modificar Datos de {{$student->name}} {{$student->last_name}}</h1>
 
     @if($errors->any())
     <div class="bg-red-100 border border-red-400 text-red-800 px-4 py-7 rounded-lg mb-6 shadow-md">

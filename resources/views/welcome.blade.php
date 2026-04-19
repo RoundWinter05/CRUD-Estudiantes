@@ -5,10 +5,10 @@
     <h1 class="text-5xl font-bold text-gray-800 mb-6 text-center"><span>Control</span> <span class="text-mailob-dark">Estudiantes</span></h1> 
     
     <div class="bg-white rounded-3xl shadow-md p-5 space-y-6">
-        <p class="text-center text-gray-800 md-5 font-bold">Bienvenido al sistema de Registro Estudiantil !</p>
+        <p class="text-center text-gray-800 md-5 font-bold">Bienvenido al sistema de Registro Estudiantil!</p>
 
-        <p class="text-center text-gray-800 md-5">Aquí puedes administar los registros tanto de caerrers, 
-            como para los estudiantes del Instituto Teconologico de Aguascalientes en tan solo un par de clicks. A continuación puede escoger 
+        <p class="text-center text-gray-800 md-5">Aquí puedes administar los registros tanto de carreras, 
+            como para los estudiantes del Instituto Teconológico de Aguascalientes en tan solo un par de clicks. A continuación puede escoger 
             entre realizar un registro en la tabla de estudiantes o de carreras; ambos cuentan con su pagina de index(visualización), 
             donde se podra agregar, editar, eliminar, o bien, regresar al menú y/o cambiar de registros.
         </p>

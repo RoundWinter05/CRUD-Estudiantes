@@ -22,4 +22,4 @@ donde se podra agregar, editar, eliminar, o bien, regresar al menú y/o cambiar 
 * **Herramientas:** Vite, Git, Composer, NPM
 
 ---
-Hernández López Pablo - ITA S5
+Hernández López Pablo - ITA S6

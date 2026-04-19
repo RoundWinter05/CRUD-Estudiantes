@@ -41,7 +41,7 @@
         </table>
     </div>
     <div class="mt-8 flex justify-between items-center space-x-7">
-        <a href="{{ route('major.index') }}" class="text-gray-600 hover:text-gray-700">Regresar al Inicio</a>
+        <a href="{{ route ('welcome') }}" class="text-gray-600 hover:text-gray-700">Regresar al Inicio</a>
         <a href="{{ route('major.create') }}"
         class="bg-mailob-dark text-white font-bold py-3 px-8 rounded-2xl shadow-md hover:bg-mailob-mid ">+ Crear Carrera</a>
     </div>
