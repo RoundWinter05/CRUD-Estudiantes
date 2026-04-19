@@ -1,61 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Agregar Estudiante</h1>
+@extends('layouts.app')
 
-    <div>
+@section('content')
+<div class="max-w-2xl mx-auto">
+    <h1 class="text-3xl font-bold text-gray-800 mb-6">Agregar Estudiante</h1>
+
+    
         @if($errors->any())
-        <ul>
-            @foreach($errors->all() as $error)
-            <li>{{$error}}</li>
-        @endforeach    
-        </ul>
+        <div class="bg-red-100 border border-red-400 text-red-800 px-4 py-7 rounded-lg mb-6 shadow-md">
+            <ul class="list-disc ml-5">
+                @foreach($errors->all() as $error)
+                <li>{{$error}}</li>
+            @endforeach    
+            </ul>
+        </div>
         @endif
-    </div>
+    
 
-    <div>
-        <form action="{{ route('student.store') }}" method="post">
+    <div class="bg-white rounded-2xl border border-mailob-light shadow-md p-8">
+        <form action="{{ route('student.store') }}" method="post" class="space-y-6">
             @csrf
             @method('post')
-            <div>
-                <label for="name">Nombre</label>
-                <input type="text" name="name" value="{{ old('name') }}" placeholder="Ingrese el nombre">
+            <div class="flex flex-col space-y-2">
+                <label for="name" class="font-bold text-gray-700 uppercase tracking-wide">Nombre</label>
+                <input type="text" name="name" value="{{ old('name') }}" placeholder="Ingrese el nombre"
+                class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-mailob-mid focus:ring-2 shadow-md">
             </div>
-            <div>
-                <label for="last_name">Apellido</label>
-                <input type="text" name="last_name" value="{{ old('last_name') }}" placeholder="Ingrese el apellido">
+            <div class="flex flex-col space-y-2">
+                <label for="last_name" class="font-bold text-gray-700 uppercase tracking-wide">Apellido</label>
+                <input type="text" name="last_name" value="{{ old('last_name') }}" placeholder="Ingrese el apellido"
+                class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-mailob-mid focus:ring-2 shadow-md">
             </div>
-            <div>
-                <label for="email">Correo</label>
-                <input type="email" name="email" value="{{ old('email') }}" placeholder="Ingrese un correo">
+            <div class="flex flex-col space-y-2">
+                <label for="email" class="font-bold text-gray-700 uppercase tracking-wide">Correo</label>
+                <input type="email" name="email" value="{{ old('email') }}" placeholder="Ingrese un correo"
+                class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-mailob-mid focus:ring-2 shadow-md">
             </div>
-            <div>
-                <label for="name">Carrera</label>
-                <select name="major_id" id="major_id">
+            <div class="flex flex-col space-y-2">
+                <label for="name" class="font-bold text-gray-700 uppercase tracking-wide">Carrera</label>
+                <select name="major_id" id="major_id"
+                class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-mailob-mid focus:ring-2 shadow-md">
                     <option value="">Seleccione una carrera</option>
                     @foreach ($majors as $major)
                         <option value="{{ $major->id }}">{{ $major->name}}</option>
                     @endforeach
                 </select>
             </div>
-            <div>
-                <label for="semester">Semestre</label>
-                <select name="semester" id="semester">
+            <div class="flex flex-col space-y-2">
+                <label for="semester" class="font-bold text-gray-700 uppercase tracking-wide">Semestre</label>
+                <select name="semester" id="semester"
+                class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-mailob-mid focus:ring-2 shadow-md">
                     @for ($i = 1; $i <= 12; $i++)
                         <option value="{{ $i }}">{{ $i }}° Semestre</option>
                     @endfor
                 </select>
             </div>
 
-            <div>
-                <input type="submit" value="Registrar Estudiante">
+            <div class="pt-4 flex items-center justify-between space-x-4">
+                <a href="{{ route('student.index') }}" class="text-gray-600 hover:text-gray-700">Cancelar</a>
+                <button type="submit" class="bg-mailob-dark hover:bg-mailob-mid text-white font-bold py-3 px-8 rounded-xl shadow-md">Registar Estudiante</button>
             </div>
         </form>
     </div>
-</body>
-</html>
+</div>
+@endsection
