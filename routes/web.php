@@ -7,7 +7,7 @@ use App\Http\Controllers\StudentController;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
 
 Route::get('/major', [MajorController::class,'index'])->name('major.index');
 Route::get('/major/create', [MajorController::class,'create'])->name('major.create');

@@ -54,7 +54,7 @@
 
             <div class="pt-4 flex items-center justify-between space-x-4">
                 <a href="{{ route('student.index') }}" class="text-gray-600 hover:text-gray-700">Cancelar</a>
-                button type="submit" class="bg-mailob-dark hover:bg-mailob-mid text-white font-bold py-3 px-8 rounded-xl shadow-md">Registar Estudiante</button>
+                <button type="submit" class="bg-mailob-dark hover:bg-mailob-mid text-white font-bold py-3 px-8 rounded-xl shadow-md">Actualizar Datos</button>
             </div>
         </form>
     </div>
